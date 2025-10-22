@@ -924,10 +924,7 @@ body::after {
   height: 405px;
   border-radius: 30px;
   -o-object-fit: cover;
-  object-fit: cover;
-  -o-object-position: 0 -50px;
-  object-position: 0 -50px;
-  box-shadow: 0 0 8px 0 rgba(0,0,0,.15)
+  object-fit: cover
 }
 .slide-team__text {
   display: flex;
@@ -1300,7 +1297,8 @@ body::after {
     z-index: 2
   }
   .menu-open .menu__body::before {
-    right: 0
+    right: 0;
+    background: #fff
   }
   .icon-menu {
     display: block;
@@ -1359,7 +1357,9 @@ body::after {
     flex-direction: column;
     row-gap: 75px;
     border-radius: 0 0 0 20px;
-    box-shadow: 0 0 8px 0 rgba(0,0,0,.15)
+    box-shadow: 0 0 8px 0 rgba(0,0,0,.15);
+    position: relative;
+    z-index: 2
   }
   .menu__list {
     display: flex;
@@ -1483,7 +1483,8 @@ body::after {
     row-gap: 36px
   }
   .hero__items {
-    padding: 10px
+    padding: 10px;
+    border-radius: 14px
   }
   .hero__item::after {
     height: 72px;
@@ -1602,6 +1603,9 @@ body::after {
   .whywe__header {
     row-gap: 10px
   }
+  .whywe__items {
+    row-gap: 10px
+  }
   .whywe__actions {
     row-gap: 12px
   }
@@ -1670,6 +1674,9 @@ body::after {
   }
   .call-info__decription {
     width: 291px
+  }
+  .call-info__btn {
+    padding: 14px 36px
   }
   .why__container {
     margin-top: 55px
@@ -1746,9 +1753,7 @@ body::after {
   }
   .slide-team__image {
     width: 216px;
-    height: 275px;
-    -o-object-position: 0 -20px;
-    object-position: 0 -20px
+    height: 275px
   }
   .slide-team__text {
     row-gap: 10px;
